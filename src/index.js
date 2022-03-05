@@ -3,8 +3,13 @@ const req = require('express/lib/request');
 const app = express();
 const path = require('path');
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, 'views/index.html'));
-});
+//settings
+
+app.set('views engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.set('views', path.join(__dirname, 'views'));
+
+//routes
+app.use(require('./routes/index'));
 
 module.exports = app;

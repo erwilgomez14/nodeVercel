@@ -10,7 +10,7 @@ router.get("/contacto", (req, res) => {
 router.get("/calendario", (req, res) => {
     res.render('calender.html', { title: 'Calendario' });
 });
-router.get("/catalago", (req, res) => {
+router.get("/catalogo", (req, res) => {
     res.render('magazine.html', { title: 'Catalogo' });
 });
 

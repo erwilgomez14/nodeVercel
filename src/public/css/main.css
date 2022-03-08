@@ -8,5 +8,6 @@ body {
 }
 
 .container__logo {
-    margin-top: 2.5rem;
+    border-block: border box;
+    margin-top: 15px;
 }

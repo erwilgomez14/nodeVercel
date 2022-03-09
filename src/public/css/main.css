@@ -11,3 +11,8 @@ body {
     margin-top: 5em;
     margin-bottom: 5em;
 }
+
+footer {
+    background: white;
+    text-decoration-color: black;
+}
